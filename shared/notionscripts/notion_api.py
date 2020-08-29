@@ -17,21 +17,6 @@ class NotionApi():
     def client(self):
         return NotionClient(token_v2=self.config.notion_token(), monitor=False)
 
-    @cached(cache={})
-    def tags_database(self):
-        return self.client().get_collection_view(
-            self.config.tags_database_url())
-
-    @cached(cache={})
-    def tasks_database(self):
-        return self.client().get_collection_view(
-            self.config.tasks_database_url())
-
-    @cached(cache={})
-    def wins_database(self):
-        return self.client().get_collection_view(
-            self.config.wins_database_url())
-
     def get_block(self, id):
         return self.client().get_block(id)
 
@@ -39,30 +24,8 @@ class NotionApi():
         return block.children.add_new(TextBlock, title=text)
 
     @cached(cache={})
-    def current_year(self):
-        return self.client().get_block(self.config.year_page_url())
-
-    @cached(cache={})
     def notes_page(self):
         return self.client().get_block(self.config.notes_page_url())
-
-    @cached(cache={})
-    def current_week(self):
-        found_week = None
-        current_date = datetime.now()
-
-        week_number = current_date.isocalendar()[1]
-        if self.config.week_starts_on_sunday():
-            week_number = str(week_number + (current_date.isoweekday() == 7))
-
-        for week_page in self.current_year().children:
-            if week_page.title.startswith("Week {}".format(week_number)):
-                found_week = week_page
-                break
-            else:
-                continue
-
-        return found_week
 
     @cached(cache={})
     def current_day(self):
