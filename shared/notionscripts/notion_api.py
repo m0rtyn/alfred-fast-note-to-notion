@@ -1,10 +1,10 @@
 #!/usr/bin/env -S PATH="${PATH}:/usr/local/bin" python3
 
-from cachetools import cached
 from datetime import datetime
 
+from cachetools import cached
+from notion.block import CollectionViewBlock, DividerBlock, TextBlock
 from notion.client import NotionClient
-from notion.block import DividerBlock, TextBlock, CollectionViewBlock
 
 from notionscripts.config import Config
 
@@ -19,15 +19,18 @@ class NotionApi():
 
     @cached(cache={})
     def tags_database(self):
-        return self.client().get_collection_view(self.config.tags_database_url())
+        return self.client().get_collection_view(
+            self.config.tags_database_url())
 
     @cached(cache={})
     def tasks_database(self):
-        return self.client().get_collection_view(self.config.tasks_database_url())
+        return self.client().get_collection_view(
+            self.config.tasks_database_url())
 
     @cached(cache={})
     def wins_database(self):
-        return self.client().get_collection_view(self.config.wins_database_url())
+        return self.client().get_collection_view(
+            self.config.wins_database_url())
 
     def get_block(self, id):
         return self.client().get_block(id)
@@ -38,6 +41,10 @@ class NotionApi():
     @cached(cache={})
     def current_year(self):
         return self.client().get_block(self.config.year_page_url())
+
+    @cached(cache={})
+    def notes_page(self):
+        return self.client().get_block(self.config.notes_page_url())
 
     @cached(cache={})
     def current_week(self):
@@ -78,7 +85,8 @@ class NotionApi():
         found_lights = None
 
         for block in self.current_week().children:
-            if type(block) == CollectionViewBlock and block.title.endswith("Lights"):
+            if type(block) == CollectionViewBlock and block.title.endswith(
+                    "Lights"):
                 found_lights = block
                 break
             else:
@@ -100,19 +108,26 @@ class NotionApi():
                 continue
 
             lights.append({
-                "id": row.id,
-                "title": "{} ({})".format(row.objective, getattr(row, current_day) or " "),
-                "url": row.get_browseable_url()
+                "id":
+                row.id,
+                "title":
+                "{} ({})".format(row.objective,
+                                 getattr(row, current_day) or " "),
+                "url":
+                row.get_browseable_url()
             })
 
         return lights
 
     def append_to_current_day_notes(self, content):
         # Get the divider block that signifies the end of the notes for the current day
-        divider_block = [x for x in self.current_day().children if type(x) == DividerBlock][0]
+        divider_block = [
+            x for x in self.current_day().children if type(x) == DividerBlock
+        ][0]
 
         # Add note to end of the page, then move it to before the divider
-        note_block = self.current_day().children.add_new(TextBlock, title=content)
+        note_block = self.current_day().children.add_new(TextBlock,
+                                                         title=content)
         note_block.move_to(divider_block, "before")
 
         return note_block
@@ -132,5 +147,12 @@ class NotionApi():
                 },
             ]
         }
-        current_tasks_query = self.tasks_database().build_query(filter=filter_params)
+        current_tasks_query = self.tasks_database().build_query(
+            filter=filter_params)
         return current_tasks_query.execute()
+
+    def append_text_to_notes(self, content):
+        # Add note to end of the page, then move it to before the divider
+        note_block = self.notes_page().children.add_new(TextBlock,
+                                                        title=content)
+        return note_block
