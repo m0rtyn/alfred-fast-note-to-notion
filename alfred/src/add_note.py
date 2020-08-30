@@ -6,7 +6,7 @@ import sys
 from notion_api import notion_api
 
 try:
-    parser = argparse.ArgumentParser(description='Add note')
+    parser = argparse.ArgumentParser(description='Note')
     parser.add_argument('--query', nargs=argparse.REMAINDER, help='query')
     args = parser.parse_args(sys.argv[1].split())
 

@@ -31,19 +31,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>29925A4E-45FD-469F-AEF9-92E5D1B2EF64</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3A55556D-EC87-4394-BBC5-ED3D51E03E0A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>53D71D27-C66E-462E-8915-049E099D90A4</key>
 		<array>
 			<dict>
@@ -176,74 +163,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>:search</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetch Tasks (approximately 5 seconds) ...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>./src/get_tasks.py</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search for a task (title + tags)</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>29925A4E-45FD-469F-AEF9-92E5D1B2EF64</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:url}</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>3A55556D-EC87-4394-BBC5-ED3D51E03E0A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>externaltriggerid</key>
 				<string>handleFailure</string>
 				<key>passinputasargument</key>
@@ -289,7 +208,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>:note</string>
+				<string>note</string>
 				<key>subtext</key>
 				<string>{query}</string>
 				<key>text</key>
@@ -386,24 +305,6 @@
 			<integer>620</integer>
 			<key>ypos</key>
 			<integer>1190</integer>
-		</dict>
-		<key>29925A4E-45FD-469F-AEF9-92E5D1B2EF64</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>40</integer>
-			<key>ypos</key>
-			<integer>850</integer>
-		</dict>
-		<key>3A55556D-EC87-4394-BBC5-ED3D51E03E0A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<integer>315</integer>
-			<key>ypos</key>
-			<integer>850</integer>
 		</dict>
 		<key>53D71D27-C66E-462E-8915-049E099D90A4</key>
 		<dict>
