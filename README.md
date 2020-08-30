@@ -2,7 +2,7 @@
 
 👍 Respect to @kevinjalbert for [Notion toolbox](https://github.com/kevinjalbert/notion-toolbox/tree/master/alfred)
 
-This workflow allow to send every fast through to your notion page for notes.
+This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
 ## Usage
 
