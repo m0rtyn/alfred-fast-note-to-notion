@@ -104,7 +104,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Notion</string>
+	<string>Add note to Notion</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -182,6 +182,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:query}</string>
+				<key>title</key>
+				<string>Note added under today</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0AC3EAE3-8488-4B7C-8B1C-E76FD1CC4535</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -208,7 +229,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>note</string>
+				<string>add note</string>
 				<key>subtext</key>
 				<string>{query}</string>
 				<key>text</key>
@@ -220,27 +241,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F92692D6-7FD6-41D0-9292-9B90C114AB52</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:query}</string>
-				<key>title</key>
-				<string>Note added under today</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>0AC3EAE3-8488-4B7C-8B1C-E76FD1CC4535</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -375,6 +375,6 @@
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/kevinjalbert/alfred-notion</string>
+	<string>https://github.com/martyns0n/alfred-notion</string>
 </dict>
 </plist>
