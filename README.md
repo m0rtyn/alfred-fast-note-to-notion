@@ -61,6 +61,8 @@ The first thing you'll need to do is get your Notion Token (156 character value)
 
 Depending on what browser you are using this process will vary slightly. The following diagram demonstrates how to find it using Chrome on MacOS.
 
+![](https://raw.githubusercontent.com/kevinjalbert/notion-toolbox/master/alfred/notion-token.png)
+
 #### Finding your Notion URLs
 
 We need to identify the Notion URL of your document with notes.
