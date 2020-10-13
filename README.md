@@ -1,7 +1,5 @@
 <h1 align="center">Alfred add note to notion workflow</h1>
 
-👍 Respect for [Kevin Jalbert](https://github.com/kevinjalbert)'s [Notion toolbox](https://github.com/kevinjalbert/notion-toolbox)
-
 This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
 - [Usage](#usage)
@@ -44,10 +42,14 @@ Or you can right click on workflow and select `Open in Finder`. In opedend windo
 
 And another option is to symlink the repository's sub-directory into the workflow directory (paths will vary in the example depending on where things are located):
 
-`ln -s ~/path/to/notion-toolbox/alfred ~/PATH_TO_ALFRED/Alfred.alfredpreferences/workflows/notion-toolbox-alfred`
+```bash
+ln -s ~/path/to/notion-toolbox/alfred ~/PATH_TO_ALFRED/Alfred.alfredpreferences/workflows/notion-toolbox-alfred
+```
 
 For my case i have this path to Alfred:
-`~/Library/ApplicationSupport/Alfred/Alfred.alfredpreferences/workflows/notion-toolbox-alfred`
+```bash
+~/Library/ApplicationSupport/Alfred/Alfred.alfredpreferences/workflows/notion-toolbox-alfred
+```
 
 #### Python
 
@@ -84,3 +86,9 @@ Given the information we've taken note of in the last 2 sections, we can now con
 ```
 
 Note: I know that this is a rather unconventional approach for configurations with an Alfred workflow, but it is what worked best for me. Later on, I might switch it up to something more conventional.
+
+## Acknowledgements
+
+- 👍 Respect for [Kevin Jalbert](https://github.com/kevinjalbert)'s [Notion toolbox](https://github.com/kevinjalbert/notion-toolbox)
+- Thanks to @uyouthe for repo's design advices
+
