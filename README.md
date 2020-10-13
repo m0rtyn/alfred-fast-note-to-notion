@@ -90,5 +90,4 @@ Note: I know that this is a rather unconventional approach for configurations wi
 ## Acknowledgements
 
 - 👍 Respect for [Kevin Jalbert](https://github.com/kevinjalbert)'s [Notion toolbox](https://github.com/kevinjalbert/notion-toolbox)
-- Thanks to @uyouthe for repo's design advices
-
+- Thanks to [Miloslav](https://github.com/uyouthe) for repo's design advices
