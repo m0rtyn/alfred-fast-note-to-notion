@@ -1,4 +1,4 @@
-<h1 align="center">Alfred add note to notion workflow</h1>
+<h1 align="center">Fast note to Notion (Alfred workflow)</h1>
 
 This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
