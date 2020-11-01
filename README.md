@@ -13,6 +13,8 @@ This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
 ## Usage
 
+![](https://media.giphy.com/media/qJKf1UcsiW3oviAJrO/giphy.gif)
+
 You can add notes and tasks to your notion document just from Alfred app!
 
 1. Trigger Alfred search (e.g. `option + space`)
