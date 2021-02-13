@@ -10,6 +10,7 @@ This workflow allows you to send quick thoughts to your Notion page via Alfred.
   - [Finding your Notion Token](#finding-your-notion-token)
     - [Finding your Notion URLs](#finding-your-notion-urls)
     - [Configure Data Files](#configure-data-files)
+- [Acknowledgements](#acknowledgements)
 
 ## Usage
 
@@ -55,9 +56,9 @@ For my case i have this path to Alfred:
 
 #### Python
 
-There are certain Python dependencies that are required for the scripts to work correctly. You need to navigate to the workflow's directory so that you can execute `pip3 install -r requirements.txt` from your terminal.
-
-Alternatively, you can manually install what is defined in the `./requirements.txt`.
+There are certain Python dependencies that are required for the scripts to work correctly. You need to navigate to the workflow's directory and execute from your terminal:
+- `python3 -m venv ./`
+- `pip3 install -r requirements.txt`
 
 ### Finding your Notion Token
 
