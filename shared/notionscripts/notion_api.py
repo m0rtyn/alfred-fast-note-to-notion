@@ -1,9 +1,7 @@
 #!/usr/bin/env -S PATH="${PATH}:/usr/local/bin" python3
 
-from datetime import datetime
-
 from cachetools import cached
-from notion.block import CollectionViewBlock, DividerBlock, TextBlock, TodoBlock
+from notion.block import TextBlock, TodoBlock
 from notion.client import NotionClient
 
 from notionscripts.config import Config
@@ -32,7 +30,7 @@ class NotionApi():
                                                         title=content)
         return note_block
 
-    def append_task_to_notes(self, content):
-        task_block = self.notes_page().children.add_new(TodoBlock, title=content)
+    def append_task_to_notes(self, content, checked):
+        task_block = self.notes_page().children.add_new(TodoBlock, title=content, checked=checked)
         
         return task_block
