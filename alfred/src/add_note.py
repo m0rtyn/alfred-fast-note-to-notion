@@ -11,8 +11,10 @@ try:
     args = parser.parse_args(sys.argv[1].split())
 
     query = ' '.join(args.query)
+    response = notion_api.append_text_to_notes(query).title
 
-    print(notion_api.append_text_to_notes(query).title, query)
+    sys.stdout.write(query)
 except Exception as e:
     # Print out nothing on STDOUT (missing value means means operation was unsuccessful)
-    sys.stderr.write(e)
+    sys.stdout.write()
+    # sys.stderr.write('Error!')

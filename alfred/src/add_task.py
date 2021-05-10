@@ -12,7 +12,9 @@ try:
 
     query = ' '.join(args.query)
 
-    print(notion_api.append_task_to_notes(query, False).title, query)
+    response = notion_api.append_task_to_notes(query, False).title
+    # print(response, query)
+    sys.stdout.write(query)
 except Exception as e:
-    # Print out nothing on STDOUT (missing value means means operation was unsuccessful)
-    sys.stderr.write(e)
+    # Print out nothing on STDOUT (missing value means operation was unsuccessful)
+    sys.stdout.write()
