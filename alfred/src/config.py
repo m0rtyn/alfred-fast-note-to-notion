@@ -29,3 +29,7 @@ class Config():
     @cached(cache={})
     def notes_page_url(self):
         return self.config_json()['NOTES_PAGE_URL']
+
+    @cached(cache={})
+    def get_results_database_url(self):
+        return  self.config_json()['RESULTS_DATABASE_URL']

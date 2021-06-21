@@ -31,6 +31,12 @@ class NotionApi():
         return note_block
 
     def append_task_to_notes(self, content, checked):
-        task_block = self.notes_page().children.add_new(TodoBlock, title=content, checked=checked)
-        
+        task_block = self.notes_page().children.add_new(TodoBlock,
+                                                        title=content,
+                                                        checked=checked)
         return task_block
+
+    def get_results_database(self):
+        results_url = self.config.get_results_database_url()
+        collection_view = self.client().get_collection_view(results_url)
+        return collection_view
