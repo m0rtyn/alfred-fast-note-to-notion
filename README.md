@@ -2,6 +2,8 @@
 
 This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
+![image](https://user-images.githubusercontent.com/20739202/123512201-5e3dc400-d686-11eb-8ce7-41058a91df4e.png)
+
 - [Features](#features)
 - [Usage](#usage)
 - [Setup](#setup)
@@ -29,7 +31,7 @@ This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
 ## Usage
 
-![](https://media.giphy.com/media/qJKf1UcsiW3oviAJrO/giphy.gif)
+![Screencast with usage](https://user-images.githubusercontent.com/20739202/123512142-233b9080-d686-11eb-9df1-b211ff65b6fb.gif)
 
 You can add notes and tasks to your notion document/table just from Alfred app!
 
