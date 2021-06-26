@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.alfredapp.m0rtyn.fastnotetonotion</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -398,7 +398,7 @@
 	<key>createdby</key>
 	<string>Martyn</string>
 	<key>description</key>
-	<string>A tailored Alfred Workflow that performs tasks using notion-py within the context of a specific Notion Template</string>
+	<string>Alfred Workflow that performs notes and tasks using notion-py</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -974,27 +974,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:query}</string>
-				<key>title</key>
-				<string>Task added under today</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>A7FAC5BE-747D-4FA1-853A-3C487DA65242</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -1010,6 +989,27 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F78E5888-EADC-4712-A704-6705560C9949</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:query}</string>
+				<key>title</key>
+				<string>Task added under today</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>A7FAC5BE-747D-4FA1-853A-3C487DA65242</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
