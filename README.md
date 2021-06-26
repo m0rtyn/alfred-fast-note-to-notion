@@ -2,6 +2,7 @@
 
 This workflow allows you to send quick thoughts to your Notion page via Alfred.
 
+- [Features](#features)
 - [Usage](#usage)
 - [Setup](#setup)
   - [Install](#install)
@@ -12,17 +13,31 @@ This workflow allows you to send quick thoughts to your Notion page via Alfred.
     - [Configure Data Files](#configure-data-files)
 - [Acknowledgements](#acknowledgements)
 
+## Features
+
+- Can add record to the end of Notion document (setted in config, see setup):
+  - Notes with plain text
+  - Checkbox with text (task)
+  - Checked checkbox with text (done task)
+- Can add to the Notion table (setted in config, see setup):
+  - Row (result) with "due date" field setted to tomorrow
+- Russian phonetical shortcuts for actions from above:
+  - add note — адд ноте
+  - add task — адд таск
+  - add result — адд ресулт
+
+
 ## Usage
 
 ![](https://media.giphy.com/media/qJKf1UcsiW3oviAJrO/giphy.gif)
 
-You can add notes and tasks to your notion document just from Alfred app!
+You can add notes and tasks to your notion document/table just from Alfred app!
 
 1. Trigger Alfred search (e.g. `option + space`)
 2. Start to write: add ...
-3. Select one of options: add note, add task. Or press `enter` for first result row
+3. Select one of options: "add note", "add task", "add result", "done task". Or press `enter` for first result row
 4. Type text of note or task
-5. Press `Enter`, thats all
+5. Press `Enter`. Thats all
 
 ## Setup
 
@@ -78,13 +93,14 @@ These are can be acquired by finding the correct resource in your Notion and usi
 
 Given the information we've taken note of in the last 2 sections, we can now configure our data files.
 
-- Find ./data/config.sample.json, and rename to ./data/config.json.
+- Find `./data/config.sample.json`, and rename to `./data/config.json`.
 - Fill the value out in ./data/config.json with the Notion Token and Notion URLs:
 
 ```
   {
-    "NOTION_TOKEN": "your-notion-token",
-    "NOTES_PAGE_URL": "your-notion-tags-database-url",
+    "NOTION_TOKEN": <your-notion-token>,
+    "NOTES_PAGE_URL": <your-notion-inbox-document-url>,
+    "RESULTS_DATABASE_URL": <your-notion-results-table-url>,
   }
 ```
 

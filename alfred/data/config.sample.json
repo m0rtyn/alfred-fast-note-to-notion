@@ -1,4 +1,5 @@
 {
   "NOTION_TOKEN": "token",
-  "NOTES_PAGE_URL": "https://www.notion.so/username/page-name"
+  "NOTES_PAGE_URL": "https://www.notion.so/username/page-id",
+  "RESULTS_DATABASE_URL": "https://www.notion.so/username/page-id"
 }
