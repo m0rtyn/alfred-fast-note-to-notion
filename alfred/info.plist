@@ -72,6 +72,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>30531525-BA54-4D0F-84D8-404958CFB976</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8FDA219-632A-484B-BDD1-BD13C859EB0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>309D4D6A-09C2-4646-ADCE-899E4B9D04D0</key>
 		<array>
 			<dict>
@@ -162,11 +175,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>857F3939-347D-4135-B30E-225088FB2DB0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D0B559A-FBE7-4267-AE1E-C9A43435F919</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>89F6E99B-347B-4F01-BF31-442A23A4C7E7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>09C8F0EB-F591-4739-ADF3-C9E785B8897E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A12274AE-986A-46E5-B9FB-F5E8093F160F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D0B559A-FBE7-4267-AE1E-C9A43435F919</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -256,6 +295,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>CAE88F95-1630-4A6E-AC58-7DAFE53ECDFB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CF216425-BEA4-44BA-B6E5-BC3DA47876AC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8FDA219-632A-484B-BDD1-BD13C859EB0D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1179,6 +1231,128 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>log</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Motion → Log</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>30531525-BA54-4D0F-84D8-404958CFB976</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>notion://www.notion.so/m0rtyn/log-645abe3b2ef2412fbde79aa117a4c800</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A8FDA219-632A-484B-BDD1-BD13C859EB0D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>лог</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Motion → Log</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CF216425-BEA4-44BA-B6E5-BC3DA47876AC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>notion://www.notion.so/m0rtyn/board-1f1dee2097bf4a58aa861eea39c09aaf</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5D0B559A-FBE7-4267-AE1E-C9A43435F919</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>board</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Motion →  Board</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A12274AE-986A-46E5-B9FB-F5E8093F160F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>боард</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Motion →  Board</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>857F3939-347D-4135-B30E-225088FB2DB0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A tailored Alfred Workflow that performs tasks using notion-py (https://github.com/jamalex/notion-py) within the context of a specific Notion Template (https://www.notion.so/Week-Template-0a7ac4d03082417c929176b5ea1df07e) as described in https://kevinjalbert.com/my-weekly-notion-setup/.</string>
@@ -1226,6 +1400,13 @@
 			<integer>435</integer>
 			<key>ypos</key>
 			<integer>265</integer>
+		</dict>
+		<key>30531525-BA54-4D0F-84D8-404958CFB976</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>2505</integer>
 		</dict>
 		<key>309D4D6A-09C2-4646-ADCE-899E4B9D04D0</key>
 		<dict>
@@ -1288,6 +1469,13 @@
 			<key>ypos</key>
 			<integer>1490</integer>
 		</dict>
+		<key>5D0B559A-FBE7-4267-AE1E-C9A43435F919</key>
+		<dict>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>2775</integer>
+		</dict>
 		<key>5D73C6E9-B734-4C88-9EA3-A8A621C33A9E</key>
 		<dict>
 			<key>colorindex</key>
@@ -1296,6 +1484,13 @@
 			<integer>605</integer>
 			<key>ypos</key>
 			<integer>670</integer>
+		</dict>
+		<key>857F3939-347D-4135-B30E-225088FB2DB0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>2910</integer>
 		</dict>
 		<key>86822CAB-3057-447A-A9CB-1DAD63B61208</key>
 		<dict>
@@ -1315,6 +1510,13 @@
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
+		<key>A12274AE-986A-46E5-B9FB-F5E8093F160F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>2780</integer>
+		</dict>
 		<key>A2E41787-F785-40C6-AE56-C4308CFA4A9D</key>
 		<dict>
 			<key>colorindex</key>
@@ -1332,6 +1534,13 @@
 			<integer>600</integer>
 			<key>ypos</key>
 			<integer>1490</integer>
+		</dict>
+		<key>A8FDA219-632A-484B-BDD1-BD13C859EB0D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>2555</integer>
 		</dict>
 		<key>B9F6A82B-0CFF-458C-BBB3-9F128E0CA290</key>
 		<dict>
@@ -1398,6 +1607,13 @@
 			<integer>445</integer>
 			<key>ypos</key>
 			<integer>1515</integer>
+		</dict>
+		<key>CF216425-BEA4-44BA-B6E5-BC3DA47876AC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>2630</integer>
 		</dict>
 		<key>DB161B43-DC05-4D83-80AA-3A3CBD563FF7</key>
 		<dict>

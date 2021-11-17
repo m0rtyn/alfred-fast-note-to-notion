@@ -21,9 +21,9 @@ try:
     query = ' '.join(args.query)
 
     row = collection.add_row()
-    row.result = query
-    row.due_date = NotionDate(tomorrow_date)
-    
+    # NOTE: row.name it is notion table column with name "name"
+    row.name = query
+    row.date = NotionDate(tomorrow_date)
 
     # Print out alfred-formatted JSON (modifies variables while passing query through)
     output = {
